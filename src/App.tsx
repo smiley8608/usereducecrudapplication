@@ -1,24 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { FormEvent, useContext, useReducer, useState } from 'react';
+
 import './App.css';
+import UseReducer from './Hook/useReducer';
+// import { TodoContext } from './Hook/useReducer';
 
 function App() {
+  // const {initialState,reducer}:any=useContext(TodoContext)
+  // console.log(initialState);
+  
+ 
+  // const [todos,dispatch]:any=useReducer(reducer,initialState)
+
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <UseReducer />
+      
     </div>
   );
 }
